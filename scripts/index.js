@@ -17,6 +17,7 @@ window.onload = function() {
 
             logo = game.add.sprite(game.world.centerX, game.world.centerY, 'logo');
             logo.anchor.setTo(0.5, 0.5);
+			logo.scale.setTo(0.5,0.5);
 
         }
 		
@@ -24,20 +25,20 @@ window.onload = function() {
 			
 			if (game.input.keyboard.isDown(Phaser.Keyboard.LEFT))
 			{
-				logo.x -= 4;
+				logo.x -= 8;
 			}
 			else if (game.input.keyboard.isDown(Phaser.Keyboard.RIGHT))
 			{
-				logo.x += 4;
+				logo.x += 8;
 			}
 
 			if (game.input.keyboard.isDown(Phaser.Keyboard.UP))
 			{
-				logo.y -= 4;
+				logo.y -= 8;
 			}
 			else if (game.input.keyboard.isDown(Phaser.Keyboard.DOWN))
 			{
-				logo.y += 4;
+				logo.y += 8;
 			}
 			
 		}
