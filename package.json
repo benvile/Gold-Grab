@@ -1,0 +1,23 @@
+{
+  "name": "gold_grab",
+  "version": "1.0.0",
+  "description": "Is a gam.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/benvile/Gold-Grab.git"
+  },
+  "author": "JAM",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/benvile/Gold-Grab/issues"
+  },
+  "homepage": "https://github.com/benvile/Gold-Grab#readme",
+  "dependencies": {
+    "express": "^4.15.4"
+  }
+}
