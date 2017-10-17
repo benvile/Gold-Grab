@@ -23,7 +23,7 @@ window.onload = function() {
             logo.anchor.setTo(0.5, 0.5);
 			logo.scale.setTo(0.5,0.5);
 			
-			gold = game.add.sprite(50, 50, 'gold');
+			gold = game.add.sprite(750, 50, 'gold');
 			gold.anchor.setTo(0.5, 0.5);
 			gold.scale.setTo(0.2,0.2);
 
