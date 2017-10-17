@@ -23,9 +23,12 @@ window.onload = function() {
 			logo.enableBody = true;
 			logo.body.collideWorldBounds = true;
 			
-			gold = game.add.sprite(750, 50, 'gold');
-			gold.anchor.setTo(0.5, 0.5);
-			gold.scale.setTo(0.2,0.2);
+			for (var x = 0; x < 5; x++)
+			{
+				gold = game.add.sprite(game.rnd.integerInRange(50, 750), game.rnd.integerInRange(50, 550), 'gold');
+				gold.anchor.setTo(0.5, 0.5);
+				gold.scale.setTo(0.2,0.2);
+			}
 
         }
 		
