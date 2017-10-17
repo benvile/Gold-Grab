@@ -7,14 +7,21 @@ window.onload = function() {
         let game = new Phaser.Game(800, 600, Phaser.AUTO, 'Gold Grab', { preload: preload, create: create, update: update });
 		let logo;
 		let gold;
+		let mechaHitler;
 		
         function preload () {
             game.load.image('logo', 'phaser.png');
 			game.load.image('gold', 'Gold-Ingot.png');
+			game.load.image('mechaHitler', 'Mecha-Hitler.png');
 
         }
 
         function create () {
+			
+			mechaHitler = game.add.sprite(game.world.centerX, game.world.centerY, 'mechaHitler');
+			mechaHitler.anchor.setTo(0.5, 0.5);
+			mechaHitler.scale.setTo(0.5,0.5);
+			
 			logo = game.add.sprite(game.world.centerX, game.world.centerY, 'logo');
             logo.anchor.setTo(0.5, 0.5);
 			logo.scale.setTo(0.5,0.5);
