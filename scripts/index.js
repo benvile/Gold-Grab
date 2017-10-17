@@ -15,13 +15,14 @@ window.onload = function() {
 
         }
 
-        function create () {
-
-            //logo.body.collideWorldBounds = true;
-			
+        function create () {			
 			logo = game.add.sprite(game.world.centerX, game.world.centerY, 'logo');
             logo.anchor.setTo(0.5, 0.5);
 			logo.scale.setTo(0.5,0.5);
+			
+			game.physics.enable(logo, Phaser.Physics.ARCADE);
+			logo.enableBody = true;
+			logo.body.collideWorldBounds = true;
 			
 			gold = game.add.sprite(750, 50, 'gold');
 			gold.anchor.setTo(0.5, 0.5);
