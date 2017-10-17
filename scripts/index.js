@@ -10,7 +10,7 @@ window.onload = function() {
 		let mechaHitler;
 		
         function preload () {
-            game.load.image('logo', 'phaser.png');
+            game.load.image('logo', 'jewboi.png');
 			game.load.image('gold', 'Gold-Ingot.png');
 			game.load.image('mechaHitler', 'Mecha-Hitler.png');
 
