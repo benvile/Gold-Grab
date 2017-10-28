@@ -21,6 +21,7 @@ window.onload = function() {
 			mechaHitler = game.add.sprite(game.world.centerX, game.world.centerY, 'mechaHitler');
 			mechaHitler.anchor.setTo(0.5, 0.5);
 			mechaHitler.scale.setTo(0.5,0.5);
+			game.physics.enable(mechaHitler, Phaser.Physics.ARCADE);
 			
 			logo = game.add.sprite(game.world.centerX, game.world.centerY, 'logo');
             logo.anchor.setTo(0.5, 0.5);
@@ -58,6 +59,8 @@ window.onload = function() {
 			{
 				logo.y += 8;
 			}
+			
+			mechaHitler.rotation = (game.physics.arcade.angleBetween(mechaHitler, logo)) - game.math.degToRad(90);
 			
 		}
 		
